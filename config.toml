@@ -1,0 +1,6 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "NYU CEDA"
+
+[params]
+  homeText = "NYU CEDA Website"
