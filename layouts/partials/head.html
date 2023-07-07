@@ -1,7 +1,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  {{ $css := "css/main.css" | relURL }}
-  <link rel="stylesheet" href="{{ $css }}">
+  {{ $css := resources.Get "main.css" }}
+  <link rel="stylesheet" href="{{ $css.Permalink }}">
   <title>{{ .Title }} - {{ .Site.Title }}</title>
 </head>
