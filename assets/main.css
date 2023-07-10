@@ -522,66 +522,53 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
-  width: 100%;
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
-.relative {
-  position: relative;
+.mt-auto {
+  margin-top: auto;
 }
 
 .block {
   display: block;
 }
 
-.inline {
-  display: inline;
-}
-
 .flex {
   display: flex;
 }
 
-.max-w-full {
-  max-width: 100%;
+.inline-flex {
+  display: inline-flex;
 }
 
-.border-8 {
-  border-width: 8px;
+.hidden {
+  display: none;
 }
 
-.border-transparent {
-  border-color: transparent;
+.max-w-screen-xl {
+  max-width: 1280px;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .bg-nyuViolet {
@@ -589,12 +576,12 @@ video {
   background-color: rgb(87 6 140 / var(--tw-bg-opacity));
 }
 
-.text-center {
-  text-align: center;
+.p-4 {
+  padding: 1rem;
 }
 
-.align-middle {
-  vertical-align: middle;
+.text-center {
+  text-align: center;
 }
 
 .font-sans {
@@ -610,7 +597,16 @@ video {
 
 /* Frank Ruhl Libre font */
 
-.hover\:bg-nyuDeepViolet:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 6 98 / var(--tw-bg-opacity));
+@media (min-width: 768px) {
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
 }

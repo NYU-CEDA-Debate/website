@@ -3,8 +3,8 @@ module.exports = {
   content: ["content/**/*.md", "layouts/**/*.html"],
   theme: {
     fontFamily: {
-      "sans": ['"Montserrat"'],
-      "serif": ['"Frank Ruhl Libre"']
+      sans: ['"Montserrat"'],
+      serif: ['"Frank Ruhl Libre"'],
     },
     extend: {
       colors: {
@@ -18,15 +18,15 @@ module.exports = {
         nyuLightViolet2: "#eee6f3",
       },
       lineHeight: {
-        "nav-bar": "7.66667rem"
-      }
+        "nav-bar": "7.66667rem",
+      },
     },
     srceens: {
       sm: "480px",
       md: "768px",
       lg: "976px",
-      xl: "1440px"
+      xl: "1440px",
     },
   },
   plugins: [],
-}
+};
