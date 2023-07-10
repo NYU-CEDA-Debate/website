@@ -1,23 +1,31 @@
-<nav class="relative max-w-full container font-sans">
-  <!-- Flex container -->
-  <div class="flex container align-middle">
-    <!-- Logo -->
-    <div>
-      <img src="../img/nyuceda-logo.png" alt="NYU CEDA logo" width="85px" height="85px" />
-    </div>
-    <!-- Menu Items -->
-    <ul>
-      <li class="inline">
-        <a id="about" href="./about" class="border-transparent border-8 hover:bg-nyuDeepViolet">About</a>
+<nav class="font-sans">
+  <!-- Logo -->
+  <div
+    class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4"
+  >
+    <a href="#" class="flex items-center">
+      <img
+        src="../img/nyuceda-logo.png"
+        alt="NYU CEDA logo"
+        width="85px"
+        height="85px"
+        class="inline-flex"
+      />
+    </a>
+    <ul
+      class="mt-auto hidden rounded-lg border bg-nyuViolet text-white md:mt-0 md:flex md:flex-row"
+    >
+      <li>
+        <a href="./about" class="block p-4">About</a>
       </li>
-      <li class="inline">
-        <a id="calendar" href="./calendar" class="border-transparent border-8 hover:bg-nyuDeepViolet">Calendar</a>
+      <li>
+        <a href="./e-board" class="block p-4">E-Board</a>
       </li>
-      <li class="inline">
-        <a id="coaches" href="./coaches" class="border-transparent border-8 hover:bg-nyuDeepViolet">Coaches</a>
+      <li>
+        <a href="./calendar" class="block p-4">Calendar</a>
       </li>
-      <li class="inline">
-        <a id="e-board" href="./e-board" class="border-transparent border-8 hover:bg-nyuDeepViolet">E-Board</a>
+      <li>
+        <a href="./coaches" class="block p-4">Coaches</a>
       </li>
     </ul>
   </div>
