@@ -2,5 +2,7 @@ baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "NYU CEDA"
 
+sectionPagesMenu = "main"
+
 [params]
   homeText = "NYU CEDA Website"
