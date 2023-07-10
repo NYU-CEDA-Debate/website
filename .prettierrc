@@ -1,5 +1,5 @@
 {
-  "tab_width": 2,
-  "tabs": false
+  "tabWidth": 2,
+  "useTabs": false,
   "bracketSameLine": true
 }
