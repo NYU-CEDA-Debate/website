@@ -1,10 +1,11 @@
 {{ $logo := resources.GetMatch "img/nyuceda-logo.png" }}
+{{ $banner := resources.GetMatch .Params.banner }}
 
 
 <section>
   <div class="relative h-96 w-full">
-    {{ if .Params.banner }}
-      <img class="w-full object-cover" src="{{ .Params.banner }}" />
+    {{ with $banner }}
+      <img class="w-full object-cover" src="{{ .RelPermalink }}" />
     {{ end }}
 
 
