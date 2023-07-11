@@ -3,41 +3,36 @@
 
 
 <section>
-  <div class="relative h-96 w-full">
-    {{ with $banner }}
-      <img class="w-full object-cover" src="{{ .RelPermalink }}" />
+  <div class="relative w-full">
+    {{ if .Params.banner }}
+    <img class="w-full h-full object-cover" src="{{ $banner.RelPermalink }}" />
     {{ end }}
 
-
-    <nav
-      class="absolute top-0 mx-auto flex w-full items-center justify-between p-4 text-white"
-    >
-      <a href="/">
-        {{ with $logo }}
-          <img
-            src="{{ .RelPermalink }}"
-            alt="NYU CEDA logo"
-            width="125px"
-            height="125px"
-            class="inline-flex"
-          />
+    {{ if .Params.banner }}
+    <nav class="absolute top-0 mx-auto flex w-full items-center justify-between p-4 text-white">
+      {{ else }}
+      <nav class="top-0 mx-auto flex w-full items-center justify-between p-4 text-white">
         {{ end }}
-      </a>
+        <a href="/">
+          {{ with $logo }}
+          <img src="{{ .RelPermalink }}" alt="NYU CEDA logo" class="inline-flex h-20 w-20 md:h-32 md:w-32" />
+          {{ end }}
+        </a>
 
-      <ul class="hidden rounded-lg bg-nyuViolet md:mt-0 md:flex md:flex-row">
-        <li>
-          <a href="/about" class="block p-4">About</a>
-        </li>
-        <li>
-          <a href="/e-board" class="block p-4">E-Board</a>
-        </li>
-        <li>
-          <a href="/calendar" class="block p-4">Calendar</a>
-        </li>
-        <li>
-          <a href="/coaches" class="block p-4">Coaches</a>
-        </li>
-      </ul>
-    </nav>
+        <ul class="hidden rounded-lg bg-nyuViolet md:mt-0 md:flex md:flex-row">
+          <li>
+            <a href="/about" class="block p-4">About</a>
+          </li>
+          <li>
+            <a href="/e-board" class="block p-4">E-Board</a>
+          </li>
+          <li>
+            <a href="/calendar" class="block p-4">Calendar</a>
+          </li>
+          <li>
+            <a href="/coaches" class="block p-4">Coaches</a>
+          </li>
+        </ul>
+      </nav>
   </div>
 </section>
