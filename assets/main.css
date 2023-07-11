@@ -522,13 +522,21 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.top-0 {
+  top: 0px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
-}
-
-.mt-auto {
-  margin-top: auto;
 }
 
 .block {
@@ -547,12 +555,12 @@ video {
   display: none;
 }
 
-.max-w-screen-xl {
-  max-width: 1280px;
+.h-96 {
+  height: 24rem;
 }
 
-.flex-wrap {
-  flex-wrap: wrap;
+.w-full {
+  width: 100%;
 }
 
 .items-center {
@@ -567,13 +575,14 @@ video {
   border-radius: 0.5rem;
 }
 
-.border {
-  border-width: 1px;
-}
-
 .bg-nyuViolet {
   --tw-bg-opacity: 1;
   background-color: rgb(87 6 140 / var(--tw-bg-opacity));
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .p-4 {
