@@ -3,8 +3,8 @@ module.exports = {
   content: ["content/**/*.md", "layouts/**/*.html"],
   theme: {
     fontFamily: {
-      sans: ['"Montserrat"'],
-      serif: ['"Frank Ruhl Libre"'],
+      sans: ["Montserrat"],
+      serif: ["Bitter"],
     },
     extend: {
       colors: {
@@ -28,5 +28,4 @@ module.exports = {
       xl: "1440px",
     },
   },
-  plugins: [require("@tailwindcss/typography")],
 };
