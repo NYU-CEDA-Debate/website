@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- sets html metadata and gets tailwind css -->
-{{ partial "head.html" . }}
-<!-- navbar -->
-{{ partial "nav.html" . }}
+  <!-- sets html metadata and gets tailwind css -->
+  {{ partial "head.html" . }}
+  <!-- navbar -->
+  {{ partial "nav.html" . }}
 
 
-<body>
-  <div id="content" class="font-serif">{{- block "main" . }}{{- end }}</div>
-</body>
-
+  <body>
+    <div
+      id="content"
+      class="container mx-auto flex-col px-4 font-serif md:flex-row"
+    >
+      {{- block "main" . }}{{- end }}
+    </div>
+  </body>
 </html>
