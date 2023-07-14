@@ -7,22 +7,23 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link rel="stylesheet" href="../assets/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/93716e42d5.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Home - NYU CEDA</title>
   </head>
 
-  <section id="navbar">
-    <div class="relative w-full">
-      <img
-        class="h-full w-full object-cover"
-        src="../assets/img/home-banner.jpeg"
-      />
-
-      <nav
-        class="absolute top-0 mx-auto flex w-full items-center justify-between
-        p-4 text-white"
-        <!--
-        class="--> top-0 mx-auto flex w-full items-center justify-between p-4
-        text-white"
+  <body>
+    <nav class="relative w-full">
+      <div class="w-full">
+        <img
+          src="../assets/img/home-banner.jpeg"
+          alt="Photo of NYU CEDA after winning the West Point sword"
+        />
+      </div>
+      <div
+        class="absolute top-0 mx-auto flex w-full items-center justify-between p-4 text-white"
       >
         <a href="/">
           <img
@@ -32,31 +33,75 @@
           />
         </a>
 
-        <!-- <div class="hidden text-center text-4xl text-black md:flex"> -->
-        <!-- </div> -->
-
-        <ul class="hidden rounded-lg bg-nyuViolet md:mt-0 md:flex md:flex-row">
+        <ul class="hidden rounded-lg bg-nyuViolet md:flex">
           <li>
-            <a href="/about" class="block p-4">About</a>
+            <a
+              href="/about"
+              class="block rounded-l-lg p-4 hover:bg-nyuDeepViolet"
+            >
+              About
+            </a>
           </li>
           <li>
-            <a href="/e-board" class="block p-4">E-Board</a>
+            <a href="/e-board" class="block p-4 hover:bg-nyuDeepViolet">
+              E-Board
+            </a>
           </li>
           <li>
-            <a href="/calendar" class="block p-4">Calendar</a>
+            <a href="/calendar" class="block p-4 hover:bg-nyuDeepViolet">
+              Calendar
+            </a>
           </li>
           <li>
-            <a href="/coaches" class="block p-4">Coaches</a>
+            <a
+              href="/coaches"
+              class="block rounded-r-lg p-4 hover:bg-nyuDeepViolet"
+            >
+              Coaches
+            </a>
           </li>
         </ul>
-      </nav>
-    </div>
-  </section>
+      </div>
+    </nav>
 
-  <body>
-    <div
-      id="content"
-      class="container mx-auto flex-col px-4 font-serif md:flex-row"
-    ></div>
+    <footer class="bg-nyuDeepViolet">
+      <div
+        class="container mx-auto flex flex-col justify-around space-y-5 px-6 py-10 md:flex-row md:space-y-0"
+      >
+        <div
+          class="flex flex-col items-center justify-between space-y-12 md:flex-col"
+        >
+          <div class="flex justify-center space-x-6">
+            <a target="_blank" href="https://www.tiktok.com/@nyuceda">
+              <i class="fa-brands fa-tiktok fa-xl" style="color: #ffffff"> </i>
+            </a>
+
+            <a target="_blank" href="https://www.facebook.com/nyuceda">
+              <i class="fa-brands fa-facebook fa-xl" style="color: #ffffff">
+              </i>
+            </a>
+          </div>
+        </div>
+
+        <div class="flex justify-center space-x-20 text-white">
+          <div class="flex flex-col space-y-3">
+            <a href="#" class="underline-offset-2 hover:underline">Home</a>
+            <a href="#" class="underline-offset-2 hover:underline">E-Board</a>
+            <a href="#" class="underline-offset-2 hover:underline">Coaches</a>
+          </div>
+          <div class="flex flex-col space-y-3">
+            <a href="#" class="underline-offset-2 hover:underline">About</a>
+            <a href="#" class="underline-offset-2 hover:underline">Calendar</a>
+          </div>
+        </div>
+
+        <div class="text-center text-white md:block">
+          &copy; 2023
+          <a class="underline" target="_blank" href="https://shreerammodi.com"
+            >Shreeram Modi</a
+          >. All Rights Reserved
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
