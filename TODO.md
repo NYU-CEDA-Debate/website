@@ -3,6 +3,8 @@
 ### Ideas
 
 - [ ] tech help/info sheet for novices
+- [ ] Kansas style coaches page (each coach has their own page)
+- [ ] image as banner vs just "NYU Debate"
 
 ### Todo
 
@@ -12,7 +14,7 @@
 ### In Progress
 
 - [ ] brag sheet & achievements on home page
-  - [ ] make it a carousel
+  - [ ] ~~make it a carousel~~
 
 ### Done
 
