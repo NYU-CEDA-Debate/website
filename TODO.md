@@ -12,14 +12,12 @@
 
 - [ ] Hamburger menu for small width devices
 - [ ] E-board page
-- [ ] Replace west point photo with a different one
-- [ ] hero banner medium size fix
+- [ ] have news div overflow onto multiple rows if too wide
 
 ### In Progress
-
-- [ ] brag sheet & achievements on home page
-  - [ ] ~~make it a carousel~~
 
 ### Done
 
 - [x] CSS styles for pages in general
+- [x] hero banner medium size fix
+- [x] brag sheet & achievements on home page
