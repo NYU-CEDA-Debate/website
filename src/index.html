@@ -60,18 +60,29 @@
             </a>
           </li>
         </ul>
+
+        <!-- Hamburger Icon -->
+        <button
+          id="menu-btn"
+          class="hamburger z-20 block focus:outline-none md:hidden"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
       </div>
+
       <!-- Mobile Menu -->
       <!-- TODO: labels should be centered vertically  -->
       <div class="md:hidden">
         <div
           id="menu"
-          class="fixed right-0 top-0 flex h-screen w-1/3 flex-col bg-nyuLightViolet1 text-left"
+          class="fixed right-0 top-0 z-10 flex hidden h-screen w-1/3 flex-col bg-nyuLightViolet2 pt-20 text-left"
         >
-          <a class="h-20 w-full pl-4 hover:bg-nyuViolet" href="#">About</a>
-          <a class="h-20 w-full pl-4 hover:bg-nyuViolet" href="#">E-Board</a>
-          <a class="h-20 w-full pl-4 hover:bg-nyuViolet" href="#">Coaches</a>
-          <a class="h-20 w-full pl-4 hover:bg-nyuViolet" href="#">Calendar</a>
+          <a class="h-14 w-full pl-4 hover:bg-nyuViolet" href="#">About</a>
+          <a class="h-14 w-full pl-4 hover:bg-nyuViolet" href="#">E-Board</a>
+          <a class="h-14 w-full pl-4 hover:bg-nyuViolet" href="#">Coaches</a>
+          <a class="h-14 w-full pl-4 hover:bg-nyuViolet" href="#">Calendar</a>
         </div>
       </div>
     </nav>
