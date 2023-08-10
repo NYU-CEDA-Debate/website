@@ -4,16 +4,15 @@
 
 - [ ] tech help/info sheet for novices
 - [ ] ~~Kansas style coaches page (each coach has their own page)~~
-- [ ] use more text headers instead of the plain text
-- [ ] use more visuals
+- [ ] instead of a calendar page, have an embed of a gcal for the team's tournament schedule
 
 ### Todo
 
-- [ ] Hamburger menu for small width devices
-- [x] E-board page
 - [ ] have news div overflow onto multiple rows if too wide
 
 ### In Progress
+
+- [ ] Hamburger menu for small width devices
 
 ### Done
 
@@ -21,3 +20,6 @@
 - [x] hero banner medium size fix
 - [x] brag sheet & achievements on home page
 - [x] image as banner vs just "NYU Debate"
+- [x] use more text headers instead of the plain text
+- [x] use more visuals
+- [x] E-board page
