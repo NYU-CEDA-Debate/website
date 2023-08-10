@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["src/**/*.html", "src/*.html"],
+  content: ["docs/**/*.html", "docs/*.html"],
+  safelist: ["overflow-hidden", "opacity-70"],
   theme: {
     fontFamily: {
       sans: ["Montserrat"],
