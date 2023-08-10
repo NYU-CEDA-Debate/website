@@ -51,7 +51,48 @@
             </a>
           </li>
         </ul>
+
+        <button id="main-btn" class="z-20 block focus:outline-none md:hidden">
+          <span class="text-black">===</span>
+          <!-- <i class="fa-solid fa-bars fa-2xl" style="color: #000000"></i> -->
+        </button>
       </div>
+
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="slide-in fixed right-0 top-0 z-10 h-screen w-1/2 bg-nyuLightViolet2 text-left text-lg"
+        >
+          <button id="menu-btn" class="hidden">
+            <span class="text-black">xxx</span>
+            <!-- <i class="fa-solid fa-x fa-2xl" style="color: #000000"></i> -->
+          </button>
+          <a
+            class="flex h-14 w-full items-center justify-center hover:bg-nyuViolet hover:text-nyuLightViolet2"
+            href="about/"
+            >About</a
+          >
+          <a
+            class="flex h-14 w-full items-center justify-center hover:bg-nyuViolet hover:text-nyuLightViolet2"
+            href="e-board/"
+            >E-Board</a
+          >
+          <a
+            class="flex h-14 w-full items-center justify-center hover:bg-nyuViolet hover:text-nyuLightViolet2"
+            href="coaches/"
+            >Coaches</a
+          >
+          <a
+            class="flex h-14 w-full items-center justify-center hover:bg-nyuViolet hover:text-nyuLightViolet2"
+            href="calendar/"
+            >Calendar</a
+          >
+        </div>
+      </div>
+      <div
+        id="overlay"
+        class="pointer-events-none fixed left-0 top-0 h-full w-full bg-black opacity-0 transition-opacity duration-300"
+      ></div>
     </nav>
 
     <div class="text-center">
@@ -307,5 +348,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="../../assets/js/menu.js"></script>
   </body>
 </html>
