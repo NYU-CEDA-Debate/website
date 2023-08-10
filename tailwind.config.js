@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["docs/**/*.html", "docs/*.html"],
+  content: ["**/*.html", "*.html"],
   safelist: ["overflow-hidden", "opacity-70"],
   theme: {
     fontFamily: {
