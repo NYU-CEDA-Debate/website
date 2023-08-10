@@ -69,23 +69,6 @@ h2 {
   transform: translateY(14px);
 }
 
-.open {
-  transform: rotate(90deg);
-  transform: translateY(0px);
-}
-
-.open .hamburger-top {
-  transform: rotate(45deg) translateY(6px) translate(6px);
-}
-
-.open .hamburger-middle {
-  display: none;
-}
-
-.open .hamburger-bottom {
-  transform: rotate(-45deg) translateY(6px) translate(-6px);
-}
-
 .slide-in {
   transform: translateX(100%);
   transition: transform 0.3s ease-out;
