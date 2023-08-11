@@ -664,6 +664,10 @@ video {
   height: 100vh;
 }
 
+.h-1\/2 {
+  height: 50%;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -1036,6 +1040,10 @@ h2 {
 }
 
 @media (min-width: 480px) {
+  .sm\:h-1\/2 {
+    height: 50%;
+  }
+
   .sm\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -1069,6 +1077,10 @@ h2 {
 
   .md\:h-32 {
     height: 8rem;
+  }
+
+  .md\:h-full {
+    height: 100%;
   }
 
   .md\:w-1\/2 {
