@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" type="image/png" href="../assets/img/nyuceda-logo.png" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/93716e42d5.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>About - NYU CEDA</title>
+  </head>
+
+  <body>
+    <nav class="relative w-full pb-20 md:pb-40">
+      <div
+        class="absolute left-1/2 mx-auto flex w-full max-w-6xl -translate-x-1/2 transform items-center justify-between border-b border-gray-300 p-5 text-white"
+      >
+        <div class="inline font-serif text-black sm:text-lg md:text-2xl">
+          <a href="../">NYU CEDA Debate</a>
+        </div>
+
+        <ul class="hidden rounded-lg bg-nyuViolet md:flex">
+          <li>
+            <a
+              href="../about/"
+              class="block rounded-l-lg p-4 hover:bg-nyuDeepViolet"
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a href="../e-board/" class="block p-4 hover:bg-nyuDeepViolet">
+              E-Board
+            </a>
+          </li>
+          <li>
+            <a href="../coaches/" class="block p-4 hover:bg-nyuDeepViolet">
+              Coaches
+            </a>
+          </li>
+          <li>
+            <a
+              href="../calendar/"
+              class="block rounded-r-lg p-4 hover:bg-nyuDeepViolet"
+            >
+              Calendar
+            </a>
+          </li>
+        </ul>
+
+        <button id="main-btn" class="z-20 block focus:outline-none md:hidden">
+          <i class="fa-solid fa-bars fa-xl" style="color: #000000"></i>
+        </button>
+      </div>
+
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="slide-in fixed right-0 top-0 z-10 h-screen w-1/2 bg-nyuLightViolet2 pt-5 text-left text-lg"
+        >
+          <button id="menu-btn" class="hidden pb-5 pl-2">
+            <i class="fa-solid fa-x fa-xl" style="color: #000000"></i>
+          </button>
+          <a
+            class="flex h-14 w-full items-center justify-center hover:bg-nyuViolet hover:text-nyuLightViolet2"
+            href="../"
+            >Home</a
+          >
+          <a
+            class="flex h-14 w-full items-center justify-center hover:bg-nyuViolet hover:text-nyuLightViolet2"
+            href="../about/"
+            >About</a
+          >
+          <a
+            class="flex h-14 w-full items-center justify-center hover:bg-nyuViolet hover:text-nyuLightViolet2"
+            href="../e-board/"
+            >E-Board</a
+          >
+          <a
+            class="flex h-14 w-full items-center justify-center hover:bg-nyuViolet hover:text-nyuLightViolet2"
+            href="../coaches/"
+            >Coaches</a
+          >
+          <a
+            class="flex h-14 w-full items-center justify-center hover:bg-nyuViolet hover:text-nyuLightViolet2"
+            href="../calendar/"
+            >Calendar</a
+          >
+        </div>
+      </div>
+      <div
+        id="overlay"
+        class="pointer-events-none fixed left-0 top-0 h-full w-full bg-black opacity-0 transition-opacity duration-300"
+      ></div>
+    </nav>
+
+    <div class="text-center">
+      <h1>About</h1>
+    </div>
+
+    <footer class="bg-nyuDeepViolet">
+      <div
+        class="mx-auto flex flex-col justify-around space-y-5 px-6 py-10 md:flex-row md:space-y-0"
+      >
+        <div class="flex flex-col items-center justify-between space-y-12">
+          <div class="flex justify-center space-x-6">
+            <a target="_blank" href="https://www.tiktok.com/@nyuceda">
+              <i class="fa-brands fa-tiktok fa-xl" style="color: #ffffff"> </i>
+            </a>
+
+            <a target="_blank" href="https://www.facebook.com/nyuceda">
+              <i class="fa-brands fa-facebook fa-xl" style="color: #ffffff">
+              </i>
+            </a>
+          </div>
+        </div>
+
+        <div class="flex justify-center space-x-20 text-white">
+          <div class="flex flex-col space-y-3">
+            <a href="../" class="underline-offset-2 hover:underline">Home</a>
+            <a href="../e-board/" class="underline-offset-2 hover:underline"
+              >E-Board</a
+            >
+            <a href="../coaches/" class="underline-offset-2 hover:underline"
+              >Coaches</a
+            >
+          </div>
+          <div class="flex flex-col space-y-3">
+            <a href="../about/" class="underline-offset-2 hover:underline"
+              >About</a
+            >
+            <a href="../calendar/" class="underline-offset-2 hover:underline"
+              >Calendar</a
+            >
+          </div>
+        </div>
+
+        <div class="text-center text-white md:block">
+          &copy; 2023
+          <a class="underline" target="_blank" href="https://shreerammodi.com"
+            >Shreeram Modi</a
+          >. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" type="image/png" href="./assets/img/nyuceda-logo.png" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/93716e42d5.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Home - NYU CEDA</title>
+  </head>
+
+  <body>
+    <nav class="relative w-full">
+      <img
+        src="assets/img/home-banner.jpeg"
+        alt="Photo of NYU CEDA after winning the West Point sword"
+        class="h-1/2 object-cover md:h-full"
+      />
+      <div
+        class="absolute top-0 mx-auto flex w-full items-center justify-between p-4 text-white"
+      >
+        <a href="./">
+          <img
+            src="assets/img/nyuceda-logo.png"
+            alt="NYU CEDA logo"
+            class="inline-flex h-20 w-20 md:h-32 md:w-32 xl:h-44 xl:w-44"
+          />
+        </a>
+
+        <ul class="hidden rounded-lg bg-nyuViolet md:flex">
+          <li>
+            <a
+              href="about/"
+              class="block rounded-l-lg p-4 hover:bg-nyuDeepViolet"
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a href="e-board/" class="block p-4 hover:bg-nyuDeepViolet">
+              E-Board
+            </a>
+          </li>
+          <li>
+            <a href="coaches/" class="block p-4 hover:bg-nyuDeepViolet">
+              Coaches
+            </a>
+          </li>
+          <li>
+            <a
+              href="calendar/"
+              class="block rounded-r-lg p-4 hover:bg-nyuDeepViolet"
+            >
+              Calendar
+            </a>
+          </li>
+        </ul>
+
+        <button id="main-btn" class="z-20 block focus:outline-none md:hidden">
+          <i class="fa-solid fa-bars fa-xl" style="color: #000000"></i>
+        </button>
+      </div>
+
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="slide-in fixed right-0 top-0 z-10 h-screen w-1/2 bg-nyuLightViolet2 pt-5 text-left text-lg"
+        >
+          <button id="menu-btn" class="hidden pb-5 pl-2">
+            <i class="fa-solid fa-x fa-xl" style="color: #000000"></i>
+          </button>
+          <a
+            class="flex h-14 w-full items-center justify-center hover:bg-nyuViolet hover:text-nyuLightViolet2"
+            href="./"
+            >Home</a
+          >
+          <a
+            class="flex h-14 w-full items-center justify-center hover:bg-nyuViolet hover:text-nyuLightViolet2"
+            href="about/"
+            >About</a
+          >
+          <a
+            class="flex h-14 w-full items-center justify-center hover:bg-nyuViolet hover:text-nyuLightViolet2"
+            href="e-board/"
+            >E-Board</a
+          >
+          <a
+            class="flex h-14 w-full items-center justify-center hover:bg-nyuViolet hover:text-nyuLightViolet2"
+            href="coaches/"
+            >Coaches</a
+          >
+          <a
+            class="flex h-14 w-full items-center justify-center hover:bg-nyuViolet hover:text-nyuLightViolet2"
+            href="calendar/"
+            >Calendar</a
+          >
+        </div>
+      </div>
+      <div
+        id="overlay"
+        class="pointer-events-none fixed left-0 top-0 h-full w-full bg-black opacity-0 transition-opacity duration-300"
+      ></div>
+    </nav>
+
+    <div
+      id="ippf-banner"
+      class="mx-auto flex w-full max-w-xl flex-col p-4 md:max-w-6xl"
+    >
+      <div class="flex flex-col md:flex-row">
+        <img
+          src="assets/img/ippf-banner.jpeg"
+          alt="Photo of the IPPF Champions"
+          class="h-full w-full object-cover p-2 md:w-1/2"
+        />
+        <div class="text-justify md:ml-5">
+          <h2 class="text-lg font-bold">
+            NYU CEDA community service partnership with Brewer Foundation
+            featured in Newsweek
+          </h2>
+          <p class="text-sm">
+            After years of hard work and participation, Potomac Oak of Rockville
+            Maryland won the $10,000 grand prize at the 22nd annual IPPF
+            Championship.
+            <a
+              href="https://www.newsweek.com/hubs/mightier/international-public-policy-forum-ippf-debate-contest-tournament-championship"
+              target="_blank"
+              class="text-blue-600 underline"
+              >Read more about it here.</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex items-center justify-center">
+      <div class="w-full md:max-w-6xl">
+        <h1 class="text-center font-sans md:text-left">Team Happenings</h1>
+      </div>
+    </div>
+
+    <div
+      class="flex flex-col items-center p-5 text-justify md:flex-row md:items-stretch md:justify-center md:space-x-10"
+    >
+      <div class="flex flex-col items-center py-4 md:py-0">
+        <img
+          src="assets/img/ndt-vik-manny.jpg"
+          alt="Photo of the IPPF Champions"
+          class="h-48 w-48"
+        />
+        <div class="mt-2 w-80">
+          <h2 class="text-lg font-bold">
+            NYU CEDA first-years take on the National Debate Tournament
+          </h2>
+          <p class="text-sm">
+            NYU debaters Emmanuel Makinde ('26) and Vikram Saigal ('26) appeared
+            at the 77th National Debate Tournament hosted by Wake Forest
+            University in Chantilly, Virginia. See the full list of
+            participating teams and results
+            <a
+              href="https://www.tabroom.com/index/tourn/index.mhtml?tourn_id=26828"
+              target="_blank"
+              class="text-blue-600 underline"
+              >at this link.</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center py-4 md:py-0">
+        <img
+          src="assets/img/jv-nov-nats.jpeg"
+          alt="Photo of the IPPF Champions"
+          class="h-48 w-48"
+        />
+        <div class="mt-2 w-80">
+          <h2 class="text-lg font-bold">
+            NYU CEDA first-years take on JV Nov Nats
+          </h2>
+          <p class="text-sm">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi a
+            ipsum ante. Nunc tempus orci nec orci blandit maximus. Duis sit amet
+            eros sit amet nulla tristique egestas vulputate quis massa.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center py-4 md:py-0">
+        <img
+          src="assets/img/west-point.jpeg"
+          alt="Photo of the IPPF Champions"
+          class="h-48 w-48"
+        />
+        <div class="mt-2 w-80">
+          <h2 class="text-lg font-bold">NYU CEDA at west point</h2>
+          <p class="text-sm">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed
+            leo egestas, blandit ipsum vitae, accumsan urna. Phasellus egestas
+            fringilla velit sed posuere. Vestibulum non porttitor augue.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-nyuDeepViolet">
+      <div
+        class="container mx-auto flex flex-col justify-around space-y-5 px-6 py-10 md:flex-row md:space-y-0"
+      >
+        <div class="flex flex-col items-center justify-between space-y-12">
+          <div class="flex justify-center space-x-6">
+            <a target="_blank" href="https://www.tiktok.com/@nyuceda">
+              <i class="fa-brands fa-tiktok fa-xl" style="color: #ffffff"> </i>
+            </a>
+
+            <a target="_blank" href="https://www.facebook.com/nyuceda">
+              <i class="fa-brands fa-facebook fa-xl" style="color: #ffffff">
+              </i>
+            </a>
+          </div>
+        </div>
+
+        <div class="flex justify-center space-x-20 text-white">
+          <div class="flex flex-col space-y-3">
+            <a href="./" class="underline-offset-2 hover:underline">Home</a>
+            <a href="e-board/" class="underline-offset-2 hover:underline"
+              >E-Board</a
+            >
+            <a href="coaches/" class="underline-offset-2 hover:underline"
+              >Coaches</a
+            >
+          </div>
+          <div class="flex flex-col space-y-3">
+            <a href="about/" class="underline-offset-2 hover:underline"
+              >About</a
+            >
+            <a href="calendar/" class="underline-offset-2 hover:underline"
+              >Calendar</a
+            >
+          </div>
+        </div>
+
+        <div class="text-center text-white md:block">
+          &copy; 2023
+          <a class="underline" target="_blank" href="https://shreerammodi.com"
+            >Shreeram Modi</a
+          >. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/menu.js"></script>
+  </body>
+</html>
