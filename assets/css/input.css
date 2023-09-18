@@ -29,7 +29,8 @@ strong {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   @apply font-bold;
 }
 
