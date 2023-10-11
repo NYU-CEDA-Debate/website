@@ -32,42 +32,55 @@
           <a href="../">NYU CEDA Debate</a>
         </div>
 
-        <ul class="hidden rounded-lg bg-nyuViolet md:flex">
-          <li>
-            <a
-              href="../about/"
-              class="block rounded-l-lg p-4 hover:bg-nyuDeepViolet"
+        <div
+          class="hidden flex-row rounded-l-lg rounded-br-lg rounded-tr-lg bg-nyuViolet md:flex"
+          id="desktop-menu"
+        >
+          <a
+            href="../about/"
+            class="block rounded-l-lg p-4 hover:bg-nyuDeepViolet"
+          >
+            About
+          </a>
+
+          <a href="../e-board/" class="block p-4 hover:bg-nyuDeepViolet">
+            E-Board
+          </a>
+
+          <a href="../coaches/" class="block p-4 hover:bg-nyuDeepViolet">
+            Coaches
+          </a>
+
+          <a href="../calendar/" class="block p-4 hover:bg-nyuDeepViolet">
+            Calendar
+          </a>
+
+          <div id="service-dropdown-container">
+            <button
+              href="#"
+              class="flex w-28 flex-row items-center space-x-2 rounded-br-lg rounded-tr-lg p-4 hover:bg-nyuDeepViolet"
+              id="service-dropdown-button"
             >
-              About
-            </a>
-          </li>
-          <li>
-            <a href="../e-board/" class="block p-4 hover:bg-nyuDeepViolet">
-              E-Board
-            </a>
-          </li>
-          <li>
-            <a href="../coaches/" class="block p-4 hover:bg-nyuDeepViolet">
-              Coaches
-            </a>
-          </li>
-          <li>
-            <a
-              href="../calendar/"
-              class="block rounded-r-lg p-4 hover:bg-nyuDeepViolet"
+              <p>Service</p>
+              <i class="fa-solid fa-chevron-down fa-l"></i>
+            </button>
+            <div
+              class="absolute hidden flex-col space-y-2 rounded-b-lg bg-nyuMediumViolet2 text-white"
+              id="service-dropdown"
             >
-              Calendar
-            </a>
-          </li>
-          <li>
-            <a
-              href="../community-service/"
-              class="block rounded-r-lg p-4 hover:bg-nyuDeepViolet"
-            >
-              Service
-            </a>
-          </li>
-        </ul>
+              <a
+                href="../community-service/ippf/"
+                class="w-28 p-4 hover:bg-nyuDeepViolet"
+                >IPPF</a
+              >
+              <a
+                href="../community-service/outreach/"
+                class="w-28 rounded-b-lg p-4 hover:bg-nyuDeepViolet"
+                >Outreach</a
+              >
+            </div>
+          </div>
+        </div>
 
         <button id="main-btn" class="z-20 block focus:outline-none md:hidden">
           <i class="fa-solid fa-bars fa-xl" style="color: #000000"></i>
