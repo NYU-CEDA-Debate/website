@@ -3,6 +3,8 @@ const menuBtn = document.getElementById("menu-btn");
 const nav = document.getElementById("menu");
 const overlay = document.getElementById("overlay");
 const body = document.body;
+const serviceBtn = document.getElementById("service-dropdown-button");
+const serviceDropdown = document.getElementById("service-dropdown");
 
 mainBtn.addEventListener("click", () => {
   mainBtn.classList.toggle("hidden");
@@ -30,4 +32,12 @@ menuBtn.addEventListener("click", () => {
 
   mainBtn.classList.toggle("hidden");
   mainBtn.classList.toggle("flex");
+});
+
+serviceBtn.addEventListener("click", () => {
+  serviceDropdown.classList.toggle("hidden");
+  serviceDropdown.classList.toggle("flex");
+
+  desktopMenu.classList.toggle("rounded-br-lg");
+  serviceBtn.classList.toggle("rounded-br-lg");
 });
