@@ -6,6 +6,12 @@ const overlay = document.getElementById("overlay");
 const body = document.body;
 const serviceBtn = document.getElementById("service-dropdown-button");
 const serviceDropdown = document.getElementById("service-dropdown");
+const mobileServiceBtn = document.getElementById(
+  "mobile-service-dropdown-button"
+);
+const mobileServiceDropdown = document.getElementById(
+  "mobile-service-dropdown"
+);
 
 mainBtn.addEventListener("click", () => {
   mainBtn.classList.toggle("hidden");
@@ -39,4 +45,9 @@ serviceBtn.addEventListener("click", () => {
 
   desktopMenu.classList.toggle("rounded-br-lg");
   serviceBtn.classList.toggle("rounded-br-lg");
+});
+
+mobileServiceBtn.addEventListener("click", () => {
+  mobileServiceDropdown.classList.toggle("hidden");
+  mobileServiceDropdown.classList.toggle("flex");
 });

@@ -124,11 +124,31 @@
             href="../../calendar/"
             >Calendar</a
           >
-          <a
-            class="flex h-14 w-full items-center justify-center hover:bg-nyuViolet hover:text-nyuLightViolet2"
-            href="../../community-service/"
-            >Service</a
-          >
+          <div id="mobile-service-dropdown-container">
+            <button
+              href="#"
+              class="flex h-14 w-full items-center justify-center space-x-2 hover:bg-nyuViolet hover:text-nyuLightViolet2"
+              id="mobile-service-dropdown-button"
+            >
+              <p>Service</p>
+              <i class="fa-solid fa-chevron-down fa-l"></i>
+            </button>
+            <div
+              class="absolute hidden w-full flex-col space-y-2 bg-nyuMediumViolet2 text-white"
+              id="mobile-service-dropdown"
+            >
+              <a
+                href="../../community-service/ippf/"
+                class="w-full p-4 hover:bg-nyuDeepViolet"
+                >IPPF</a
+              >
+              <a
+                href="../../community-service/outreach/"
+                class="w-full p-4 hover:bg-nyuDeepViolet"
+                >Outreach</a
+              >
+            </div>
+          </div>
         </div>
       </div>
       <div
