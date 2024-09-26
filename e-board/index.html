@@ -24,21 +24,21 @@
   </head>
 
   <body>
-    <nav class="relative w-full pb-20 md:pb-40">
+    <nav class="relative pb-20 w-full md:pb-40">
       <div
-        class="absolute left-1/2 mx-auto flex w-full max-w-6xl -translate-x-1/2 transform items-center justify-between border-b border-gray-300 p-5 text-white"
+        class="flex absolute left-1/2 justify-between items-center p-5 mx-auto w-full max-w-6xl text-white border-b border-gray-300 transform -translate-x-1/2"
       >
         <div class="inline font-serif text-black sm:text-lg md:text-2xl">
           <a href="../">NYU CEDA Debate</a>
         </div>
 
         <div
-          class="hidden flex-row rounded-l-lg rounded-br-lg rounded-tr-lg bg-nyuViolet md:flex"
+          class="hidden flex-row rounded-l-lg rounded-tr-lg rounded-br-lg md:flex bg-nyuViolet"
           id="desktop-menu"
         >
           <a
             href="../about/"
-            class="block rounded-l-lg p-4 hover:bg-nyuDeepViolet"
+            class="block p-4 rounded-l-lg hover:bg-nyuDeepViolet"
           >
             About
           </a>
@@ -58,29 +58,29 @@
           <div id="service-dropdown-container">
             <button
               href="#"
-              class="flex w-28 flex-row items-center space-x-2 rounded-br-lg rounded-tr-lg p-4 hover:bg-nyuDeepViolet"
+              class="flex flex-row items-center p-4 space-x-2 w-28 rounded-tr-lg rounded-br-lg hover:bg-nyuDeepViolet"
               id="service-dropdown-button"
             >
               <p>Service</p>
               <i class="fa-solid fa-chevron-down fa-l"></i>
             </button>
             <div
-              class="absolute hidden flex-col space-y-2 rounded-b-lg bg-nyuMediumViolet2 text-white"
+              class="hidden absolute flex-col space-y-2 text-white rounded-b-lg bg-nyuMediumViolet2"
               id="service-dropdown"
             >
-              <a href="../service/ippf/" class="w-28 p-4 hover:bg-nyuDeepViolet"
+              <a href="../service/ippf/" class="p-4 w-28 hover:bg-nyuDeepViolet"
                 >IPPF</a
               >
               <a
                 href="../service/community-partnerships/"
-                class="w-28 rounded-b-lg text-sm p-3 hover:bg-nyuDeepViolet"
+                class="p-3 w-28 text-sm rounded-b-lg hover:bg-nyuDeepViolet"
                 >Community Partnerships</a
               >
             </div>
           </div>
         </div>
 
-        <button id="main-btn" class="z-20 block focus:outline-none md:hidden">
+        <button id="main-btn" class="block z-20 md:hidden focus:outline-none">
           <i class="fa-solid fa-bars fa-xl" style="color: #000000"></i>
         </button>
       </div>
@@ -88,57 +88,57 @@
       <div class="md:hidden">
         <div
           id="mobile-menu"
-          class="slide-in fixed right-0 top-0 z-10 h-screen w-1/2 bg-nyuLightViolet2 pt-5 text-left text-lg"
+          class="fixed top-0 right-0 z-10 pt-5 w-1/2 h-screen text-lg text-left slide-in bg-nyuLightViolet2"
         >
           <button id="menu-btn" class="hidden pb-5 pl-2">
             <i class="fa-solid fa-x fa-xl" style="color: #000000"></i>
           </button>
           <a
-            class="flex h-14 w-full items-center justify-center hover:bg-nyuViolet hover:text-nyuLightViolet2"
+            class="flex justify-center items-center w-full h-14 hover:bg-nyuViolet hover:text-nyuLightViolet2"
             href="../"
             >Home</a
           >
           <a
-            class="flex h-14 w-full items-center justify-center hover:bg-nyuViolet hover:text-nyuLightViolet2"
+            class="flex justify-center items-center w-full h-14 hover:bg-nyuViolet hover:text-nyuLightViolet2"
             href="../about/"
             >About</a
           >
           <a
-            class="flex h-14 w-full items-center justify-center hover:bg-nyuViolet hover:text-nyuLightViolet2"
+            class="flex justify-center items-center w-full h-14 hover:bg-nyuViolet hover:text-nyuLightViolet2"
             href="../e-board/"
             >E-Board</a
           >
           <a
-            class="flex h-14 w-full items-center justify-center hover:bg-nyuViolet hover:text-nyuLightViolet2"
+            class="flex justify-center items-center w-full h-14 hover:bg-nyuViolet hover:text-nyuLightViolet2"
             href="../coaches/"
             >Coaches</a
           >
           <a
-            class="flex h-14 w-full items-center justify-center hover:bg-nyuViolet hover:text-nyuLightViolet2"
+            class="flex justify-center items-center w-full h-14 hover:bg-nyuViolet hover:text-nyuLightViolet2"
             href="../calendar/"
             >Calendar</a
           >
           <div id="mobile-service-dropdown-container">
             <button
               href="#"
-              class="flex h-14 w-full items-center justify-center space-x-2 hover:bg-nyuViolet hover:text-nyuLightViolet2"
+              class="flex justify-center items-center space-x-2 w-full h-14 hover:bg-nyuViolet hover:text-nyuLightViolet2"
               id="mobile-service-dropdown-button"
             >
               <p>Service</p>
               <i class="fa-solid fa-chevron-down fa-l"></i>
             </button>
             <div
-              class="absolute hidden w-full flex-col space-y-2 bg-nyuMediumViolet2 text-white"
+              class="hidden absolute flex-col space-y-2 w-full text-white bg-nyuMediumViolet2"
               id="mobile-service-dropdown"
             >
               <a
                 href="../service/ippf/"
-                class="w-full p-4 hover:bg-nyuDeepViolet"
+                class="p-4 w-full hover:bg-nyuDeepViolet"
                 >IPPF</a
               >
               <a
                 href="../service/community-partnerships/"
-                class="w-full p-4 text-sm hover:bg-nyuDeepViolet"
+                class="p-4 w-full text-sm hover:bg-nyuDeepViolet"
                 >Community Partnerships</a
               >
             </div>
@@ -147,7 +147,7 @@
       </div>
       <div
         id="overlay"
-        class="pointer-events-none fixed left-0 top-0 h-full w-full bg-black opacity-0 transition-opacity duration-300"
+        class="fixed top-0 left-0 w-full h-full bg-black opacity-0 transition-opacity duration-300 pointer-events-none"
       ></div>
     </nav>
 
@@ -156,12 +156,12 @@
     </div>
 
     <div class="flex justify-center">
-      <div class="flex max-w-6xl flex-col p-5 text-justify">
+      <div class="flex flex-col p-5 max-w-6xl text-justify">
         <div class="flex flex-col items-center py-4 md:flex-row md:items-start">
           <img
             src="../assets/img/thomas-ku.jpeg"
             alt="Photo of Thomas Ku"
-            class="mb-4 w-48 flex-shrink-0 md:mb-4 md:mr-10"
+            class="flex-shrink-0 mb-4 w-48 md:mr-10 md:mb-4"
           />
           <div class="ml-2 space-y-2">
             <h2 class="text-lg font-bold">Thomas Ku - President</h2>
@@ -187,7 +187,7 @@
           <img
             src="../assets/img/jasmine-mcclure.jpeg"
             alt="Photo of Jasmine McClure"
-            class="mb-4 w-48 flex-shrink-0 md:mb-4 md:mr-10"
+            class="flex-shrink-0 mb-4 w-48 md:mr-10 md:mb-4"
           />
           <div class="ml-2 space-y-2">
             <h2 class="text-lg font-bold">Jasmine McClure - Vice President</h2>
@@ -209,7 +209,7 @@
           <img
             src="../assets/img/jessie-tai.jpeg"
             alt="Photo of Jessie Tai"
-            class="mb-4 w-48 flex-shrink-0 md:mb-4 md:mr-10"
+            class="flex-shrink-0 mb-4 w-48 md:mr-10 md:mb-4"
           />
           <div class="ml-2 space-y-2">
             <h2 class="text-lg font-bold">Jessie Tai - Treasurer</h2>
@@ -232,7 +232,7 @@
           <img
             src="../assets/img/anuj-jain.jpeg"
             alt="Photo of Anuj Jain"
-            class="mb-4 w-48 flex-shrink-0 md:mb-4 md:mr-10"
+            class="flex-shrink-0 mb-4 w-48 md:mr-10 md:mb-4"
           />
           <div class="ml-2 space-y-2">
             <h2 class="text-lg font-bold">Anuj Jain - PR Officer</h2>
@@ -252,7 +252,7 @@
           <img
             src="../assets/img/reeya-kansra.jpeg"
             alt="Photo of Reeya Kansra"
-            class="w-48 flex-shrink-0 md:mr-10"
+            class="flex-shrink-0 w-48 md:mr-10"
           />
           <div class="ml-2 space-y-2">
             <h2 class="text-lg font-bold">Reeya Kansra - PR Officer</h2>
@@ -277,7 +277,7 @@
           <img
             src="../assets/img/shreeram-modi.jpeg"
             alt="Photo of Shreeram Modi"
-            class="w-48 flex-shrink-0 md:mr-10"
+            class="flex-shrink-0 w-48 md:mr-10"
           />
           <div class="ml-2 space-y-2">
             <h2 class="text-lg font-bold">Shreeram Modi - Webmaster</h2>
@@ -305,7 +305,7 @@
           <img
             src="../assets/img/elena-li.jpeg"
             alt="Photo of Elena Li"
-            class="w-48 flex-shrink-0 md:mr-10"
+            class="flex-shrink-0 w-48 md:mr-10"
           />
           <div class="ml-2 space-y-2">
             <h2 class="text-lg font-bold">Elena Li - Secretary</h2>
@@ -338,9 +338,9 @@
 
     <footer class="bg-nyuDeepViolet">
       <div
-        class="mx-auto flex flex-col justify-around space-y-5 px-6 py-10 md:flex-row md:space-y-0"
+        class="flex flex-col justify-around py-10 px-6 mx-auto space-y-5 md:flex-row md:space-y-0"
       >
-        <div class="flex flex-col items-center justify-between space-y-12">
+        <div class="flex flex-col justify-between items-center space-y-12">
           <div class="flex justify-center space-x-6">
             <a target="_blank" href="https://www.instagram.com/nyu_ceda">
               <i class="fa-brands fa-instagram fa-xl" style="color: #ffffff">
@@ -360,19 +360,19 @@
 
         <div class="flex justify-center space-x-20 text-white">
           <div class="flex flex-col space-y-3">
-            <a href="../" class="underline-offset-2 hover:underline">Home</a>
-            <a href="../e-board/" class="underline-offset-2 hover:underline"
+            <a href="../" class="hover:underline underline-offset-2">Home</a>
+            <a href="../e-board/" class="hover:underline underline-offset-2"
               >E-Board</a
             >
-            <a href="../coaches/" class="underline-offset-2 hover:underline"
+            <a href="../coaches/" class="hover:underline underline-offset-2"
               >Coaches</a
             >
           </div>
           <div class="flex flex-col space-y-3">
-            <a href="../about/" class="underline-offset-2 hover:underline"
+            <a href="../about/" class="hover:underline underline-offset-2"
               >About</a
             >
-            <a href="../calendar/" class="underline-offset-2 hover:underline"
+            <a href="../calendar/" class="hover:underline underline-offset-2"
               >Calendar</a
             >
           </div>
