@@ -1,394 +1,308 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="icon" type="image/png" href="../assets/img/nyuceda-logo.png" />
     <link rel="stylesheet" href="../assets/css/main.css" />
-    <script
-      src="https://kit.fontawesome.com/93716e42d5.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/93716e42d5.js" crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet" />
 
     <title>E-Board - NYU CEDA</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <nav class="relative pb-20 w-full md:pb-40">
-      <div
-        class="flex absolute left-1/2 justify-between items-center p-5 mx-auto w-full max-w-6xl text-white border-b border-gray-300 transform -translate-x-1/2"
-      >
-        <div class="inline font-serif text-black sm:text-lg md:text-2xl">
-          <a href="../">NYU CEDA Debate</a>
-        </div>
-
         <div
-          class="hidden flex-row rounded-l-lg rounded-tr-lg rounded-br-lg md:flex bg-nyuViolet"
-          id="desktop-menu"
-        >
-          <a
-            href="../about/"
-            class="block p-4 rounded-l-lg hover:bg-nyuDeepViolet"
-          >
-            About
-          </a>
-
-          <a href="../e-board/" class="block p-4 hover:bg-nyuDeepViolet">
-            E-Board
-          </a>
-
-          <a href="../coaches/" class="block p-4 hover:bg-nyuDeepViolet">
-            Coaches
-          </a>
-
-          <a href="../calendar/" class="block p-4 hover:bg-nyuDeepViolet">
-            Calendar
-          </a>
-
-          <div id="service-dropdown-container">
-            <button
-              href="#"
-              class="flex flex-row items-center p-4 space-x-2 w-28 rounded-tr-lg rounded-br-lg hover:bg-nyuDeepViolet"
-              id="service-dropdown-button"
-            >
-              <p>Service</p>
-              <i class="fa-solid fa-chevron-down fa-l"></i>
-            </button>
-            <div
-              class="hidden absolute flex-col space-y-2 text-white rounded-b-lg bg-nyuMediumViolet2"
-              id="service-dropdown"
-            >
-              <a href="../service/ippf/" class="p-4 w-28 hover:bg-nyuDeepViolet"
-                >IPPF</a
-              >
-              <a
-                href="../service/community-partnerships/"
-                class="p-3 w-28 text-sm rounded-b-lg hover:bg-nyuDeepViolet"
-                >Community Partnerships</a
-              >
+            class="flex absolute left-1/2 justify-between items-center p-5 mx-auto w-full max-w-6xl text-white border-b border-gray-300 transform -translate-x-1/2">
+            <div class="inline font-serif text-black sm:text-lg md:text-2xl">
+                <a href="../">NYU CEDA Debate</a>
             </div>
-          </div>
+
+            <div class="hidden flex-row rounded-l-lg rounded-tr-lg rounded-br-lg md:flex bg-nyuViolet"
+                id="desktop-menu">
+                <a href="../about/" class="block p-4 rounded-l-lg hover:bg-nyuDeepViolet">
+                    About
+                </a>
+
+                <a href="../e-board/" class="block p-4 hover:bg-nyuDeepViolet">
+                    E-Board
+                </a>
+
+                <a href="../coaches/" class="block p-4 hover:bg-nyuDeepViolet">
+                    Coaches
+                </a>
+
+                <a href="../calendar/" class="block p-4 hover:bg-nyuDeepViolet">
+                    Calendar
+                </a>
+
+                <div id="service-dropdown-container">
+                    <button href="#"
+                        class="flex flex-row items-center p-4 space-x-2 w-28 rounded-tr-lg rounded-br-lg hover:bg-nyuDeepViolet"
+                        id="service-dropdown-button">
+                        <p>Service</p>
+                        <i class="fa-solid fa-chevron-down fa-l"></i>
+                    </button>
+                    <div class="hidden absolute flex-col space-y-2 text-white rounded-b-lg bg-nyuMediumViolet2"
+                        id="service-dropdown">
+                        <a href="../service/ippf/" class="p-4 w-28 hover:bg-nyuDeepViolet">IPPF</a>
+                        <a href="../service/community-partnerships/"
+                            class="p-3 w-28 text-sm rounded-b-lg hover:bg-nyuDeepViolet">Community Partnerships</a>
+                    </div>
+                </div>
+            </div>
+
+            <button id="main-btn" class="block z-20 md:hidden focus:outline-none">
+                <i class="fa-solid fa-bars fa-xl" style="color: #000000"></i>
+            </button>
         </div>
 
-        <button id="main-btn" class="block z-20 md:hidden focus:outline-none">
-          <i class="fa-solid fa-bars fa-xl" style="color: #000000"></i>
-        </button>
-      </div>
-
-      <div class="md:hidden">
-        <div
-          id="mobile-menu"
-          class="fixed top-0 right-0 z-10 pt-5 w-1/2 h-screen text-lg text-left slide-in bg-nyuLightViolet2"
-        >
-          <button id="menu-btn" class="hidden pb-5 pl-2">
-            <i class="fa-solid fa-x fa-xl" style="color: #000000"></i>
-          </button>
-          <a
-            class="flex justify-center items-center w-full h-14 hover:bg-nyuViolet hover:text-nyuLightViolet2"
-            href="../"
-            >Home</a
-          >
-          <a
-            class="flex justify-center items-center w-full h-14 hover:bg-nyuViolet hover:text-nyuLightViolet2"
-            href="../about/"
-            >About</a
-          >
-          <a
-            class="flex justify-center items-center w-full h-14 hover:bg-nyuViolet hover:text-nyuLightViolet2"
-            href="../e-board/"
-            >E-Board</a
-          >
-          <a
-            class="flex justify-center items-center w-full h-14 hover:bg-nyuViolet hover:text-nyuLightViolet2"
-            href="../coaches/"
-            >Coaches</a
-          >
-          <a
-            class="flex justify-center items-center w-full h-14 hover:bg-nyuViolet hover:text-nyuLightViolet2"
-            href="../calendar/"
-            >Calendar</a
-          >
-          <div id="mobile-service-dropdown-container">
-            <button
-              href="#"
-              class="flex justify-center items-center space-x-2 w-full h-14 hover:bg-nyuViolet hover:text-nyuLightViolet2"
-              id="mobile-service-dropdown-button"
-            >
-              <p>Service</p>
-              <i class="fa-solid fa-chevron-down fa-l"></i>
-            </button>
-            <div
-              class="hidden absolute flex-col space-y-2 w-full text-white bg-nyuMediumViolet2"
-              id="mobile-service-dropdown"
-            >
-              <a
-                href="../service/ippf/"
-                class="p-4 w-full hover:bg-nyuDeepViolet"
-                >IPPF</a
-              >
-              <a
-                href="../service/community-partnerships/"
-                class="p-4 w-full text-sm hover:bg-nyuDeepViolet"
-                >Community Partnerships</a
-              >
+        <div class="md:hidden">
+            <div id="mobile-menu"
+                class="fixed top-0 right-0 z-10 pt-5 w-1/2 h-screen text-lg text-left slide-in bg-nyuLightViolet2">
+                <button id="menu-btn" class="hidden pb-5 pl-2">
+                    <i class="fa-solid fa-x fa-xl" style="color: #000000"></i>
+                </button>
+                <a class="flex justify-center items-center w-full h-14 hover:bg-nyuViolet hover:text-nyuLightViolet2"
+                    href="../">Home</a>
+                <a class="flex justify-center items-center w-full h-14 hover:bg-nyuViolet hover:text-nyuLightViolet2"
+                    href="../about/">About</a>
+                <a class="flex justify-center items-center w-full h-14 hover:bg-nyuViolet hover:text-nyuLightViolet2"
+                    href="../e-board/">E-Board</a>
+                <a class="flex justify-center items-center w-full h-14 hover:bg-nyuViolet hover:text-nyuLightViolet2"
+                    href="../coaches/">Coaches</a>
+                <a class="flex justify-center items-center w-full h-14 hover:bg-nyuViolet hover:text-nyuLightViolet2"
+                    href="../calendar/">Calendar</a>
+                <div id="mobile-service-dropdown-container">
+                    <button href="#"
+                        class="flex justify-center items-center space-x-2 w-full h-14 hover:bg-nyuViolet hover:text-nyuLightViolet2"
+                        id="mobile-service-dropdown-button">
+                        <p>Service</p>
+                        <i class="fa-solid fa-chevron-down fa-l"></i>
+                    </button>
+                    <div class="hidden absolute flex-col space-y-2 w-full text-white bg-nyuMediumViolet2"
+                        id="mobile-service-dropdown">
+                        <a href="../service/ippf/" class="p-4 w-full hover:bg-nyuDeepViolet">IPPF</a>
+                        <a href="../service/community-partnerships/"
+                            class="p-4 w-full text-sm hover:bg-nyuDeepViolet">Community Partnerships</a>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div
-        id="overlay"
-        class="fixed top-0 left-0 w-full h-full bg-black opacity-0 transition-opacity duration-300 pointer-events-none"
-      ></div>
+        <div id="overlay"
+            class="fixed top-0 left-0 w-full h-full bg-black opacity-0 transition-opacity duration-300 pointer-events-none">
+        </div>
     </nav>
 
     <div class="text-center">
-      <h1>E-Board</h1>
+        <h1>E-Board</h1>
     </div>
 
     <div class="flex justify-center">
-      <div class="flex flex-col p-5 max-w-6xl text-justify">
-        <div class="flex flex-col items-center py-4 md:flex-row md:items-start">
-          <img
-            src="../assets/img/jessie-tai.jpeg"
-            alt="Photo of Jessie Tai"
-            class="flex-shrink-0 mb-4 w-48 md:mr-10 md:mb-4"
-          />
-          <div class="ml-2 space-y-2">
-            <h2 class="text-lg font-bold">Jessie Tai - President</h2>
-            <p class="text-sm">
-              Jessie is a junior studying Neuroscience with a dual minor in Math
-              and Computer Science at CAS with plans to pursue a career in
-              research afterwards. Competing in policy debate at NYU has offered
-              endless opportunities for her to explore literature and
-              argumentation outside of the classroom, and she has found success
-              with her partner Reeya across collegiate divisions. When she's not
-              debating, Jessie is a student researcher at the NYU Langone
-              Neuroscience Institute and tutors STEM courses at the ULC.
-            </p>
-          </div>
+        <div class="flex flex-col p-5 max-w-6xl text-justify">
+            <div class="flex flex-col items-center py-4 md:flex-row md:items-start">
+                <img src="../assets/img/justin-tseng.jpeg" alt="Photo of Justin Tseng"
+                    class="flex-shrink-0 mb-4 w-48 md:mr-10 md:mb-4" />
+                <div class="ml-2 space-y-2">
+                    <h2 class="text-lg font-bold">Justin Tseng - President</h2>
+                    <p class="text-sm">
+                        Justin is a Junior at the NYU College of Arts and Sciences, where he is double-majoring in
+                        Philosophy and Economics. He started his debate career as a novice in the Spring 2025 and has
+                        since secured top ten speaker awards at over 90% of the tournaments he's attended. He placed 5th
+                        in the nation at the 2025 novice breakout at CEDA Nationals, is the defending Novice East
+                        Regional Champion, and is a two time National Debate Scholar and IPPF Ambassador. He previously
+                        served as the team treasurer and was named an NYU Emerging Student Leader for his service. As
+                        President of NYU CEDA, he is committed to fostering success for the team through collaborative,
+                        result-driven leadership that centers the development of its membership.
+                    </p>
+                </div>
+            </div>
+
+            <hr class="my-4 border-gray-300" />
+
+            <div class="flex flex-col items-center py-4 md:flex-row md:items-start">
+                <img src="../assets/img/jaylin-galvan.png" alt="Photo of Jaylin Galvan"
+                    class="flex-shrink-0 mb-4 w-48 md:mr-10 md:mb-4" />
+                <div class="ml-2 space-y-2">
+                    <h2 class="text-lg font-bold">Jaylin Galvan - Vice President</h2>
+                    <p class="text-sm">
+                        Jaylin is a junior at CAS studying Politics with a minor in Public Policy and plans to attend
+                        law school afterwards. She has been a part of NYU CEDA since her freshman year, where she
+                        previously served as Social Media chair and mentor. As of recently, she's become a research
+                        fellow with SGAC, where she works on space mitigation and international regulatory frameworks,
+                        contributing to research on emerging legal challenges. Outside of research, Jaylin has interned
+                        with the Office of Senator Kirsten Gillibrand, the New York State Attorney General's Office, and
+                        the Nuclear Age Peace Foundation.
+                    </p>
+                </div>
+            </div>
+
+            <hr class="my-4 border-gray-300" />
+
+            <div class="flex flex-col items-center py-4 md:flex-row md:items-start">
+                <img src="../assets/img/terry-lesane.jpg" alt="Photo of Terry Lesane"
+                    class="flex-shrink-0 mb-4 w-48 md:mr-10 md:mb-4" />
+                <div class="ml-2 space-y-2">
+                    <h2 class="text-lg font-bold">Terry Lesane - Treasurer</h2>
+                    <p class="text-sm">
+                        Terry is a second-year student at the NYU College of Arts and Sciences, majoring in Politics
+                        with a minor in Data Science. He was the president of his dorm hall, Brittany Hall, where he
+                        hosted and planned numerous events for his residents. He also represented over 500 residents at
+                        inter-residence hall meetings, where he advocated for solutions to quality-of-life issues. He
+                        debuted his policy debate journey at the Monmouth tournament and has gained a vast amount of
+                        experience since then, winning second speaker at the annual intramural celebration. As
+                        treasurer, he plans to ensure efficient reimbursement while also coordinating the team's budget
+                        to ensure all members can participate without having to worry about financial stress
+                    </p>
+                </div>
+            </div>
+
+            <hr class="my-4 border-gray-300" />
+
+            <div class="flex flex-col items-center py-4 md:flex-row md:items-start">
+                <img src="../assets/img/clara-vaquero.jpeg" alt="Photo of Clara Vaquero"
+                    class="flex-shrink-0 mb-4 w-48 md:mr-10 md:mb-4" />
+                <div class="ml-2 space-y-2">
+                    <h2 class="text-lg font-bold">Clara Vaquero - PR Officer</h2>
+                    <p class="text-sm">
+                        Clara Vaquero is an incoming sophomore at NYU double majoring in Politics and Public Policy,
+                        with a strong interest in law and advocacy. In high school, she developed a passion for civic
+                        engagement by organizing a voter registration drive aimed at increasing political awareness
+                        among her community. Over the summer, Clara worked as an advisor with College and Career Lab,
+                        where she mentored high school students in exploring potential career paths and navigating their
+                        academic interests. As a member of NYU-CEDA, Clara is excited to strengthen her research,
+                        argumentation, and critical thinking skills while engaging in competitive policy debate.
+                    </p>
+                </div>
+            </div>
+
+            <hr class="my-4 border-gray-300" />
+
+            <div class="flex flex-col items-center py-4 md:flex-row md:items-start">
+                <img src="" alt="Photo of Elinor Adams" class="flex-shrink-0 w-48 md:mr-10" />
+                <div class="ml-2 space-y-2">
+                    <h2 class="text-lg font-bold">Elinor Adams - PR Officer</h2>
+                    <p class="text-sm">
+                        Elinor is a second-year student concentrating in environmental justice and philosophy at
+                        Gallatin. She has plans to pursue a J.D./Ph.D and a career in environmental justice law. In her
+                        time at CEDA, she has made it to elimination rounds at East Regionals and placed 2nd at Big Tent
+                        Online, securing top ten speaker awards in both. She also represented NYU CEDA at the 3rd annual
+                        Climate Forum at Stonybrook University.
+                    </p>
+                </div>
+            </div>
+
+            <hr class="my-4 border-gray-300" />
+
+            <div class="flex flex-col items-center py-4 md:flex-row md:items-start">
+                <img src="../assets/img/melanie-castro.jpg" alt="Photo of Melanie Castro"
+                    class="flex-shrink-0 w-48 md:mr-10" />
+                <div class="ml-2 space-y-2">
+                    <h2 class="text-lg font-bold">Melanie Castro - Webmaster</h2>
+                    <p class="text-sm">
+                        Melanie is a second-year student at NYU Liberal Studies who plans to declare her major in Public
+                        Policy with a minor in Inequality Studies. She began her debate journey last year, where she
+                        debuted at Suffolks. Outside of CEDA, she has interned at Assembly member Grace Lee’s state
+                        senate campaign. As an intern, she petitioned and communicated with residents, going door to
+                        door, conducting meaningful conversations about important issues and policies affecting the
+                        community. Melanie is excited to work on the E-board!
+                    </p>
+                </div>
+            </div>
+
+            <hr class="my-4 border-gray-300" />
+
+            <div class="flex flex-col items-center py-4 md:flex-row md:items-start">
+                <img src="../assets//img/joseph-baez.jpg" alt="Photo of Joseph Baez"
+                    class="flex-shrink-0 w-48 md:mr-10" />
+                <div class="ml-2 space-y-2">
+                    <h2 class="text-lg font-bold">Joseph Baez - Secretary</h2>
+                    <p class="text-sm">
+                        Joseph is a second-year student within the NYU College of Arts and Sciences, where he is
+                        double-majoring in Politics and Philosophy pursuing a career in the legal field. He is currently
+                        interning under the office of assemblywoman Grace Lee and assisting with her campaign for State
+                        Senate. Within his first year at NYU, he has streamlined voting processes through NYU's student
+                        government systems and stimulated voter engagement within the Elections Commission Committee,
+                        organized events for NYU's HEOP class of '26 within the Senior Sunset Committee, and debuted for
+                        CEDA at the Gotham Debates finishing as a quarter-finalist and the 7th overall speaker. Joining
+                        the E-Board as Secretary of CEDA he bears great interest in establishing connections and
+                        bolstering the team's campus presence.
+                    </p>
+                </div>
+            </div>
+
+            <hr class="my-4 border-gray-300" />
+
+            <div class="flex flex-col items-center py-4 md:flex-row md:items-start">
+                <img src="../assets/img/caitlin-travers.jpg" alt="Photo of Caitlin Travers"
+                    class="flex-shrink-0 w-48 md:mr-10" />
+                <div class="ml-2 space-y-2">
+                    <h2 class="text-lg font-bold">
+                        Caitlin Travers - Data Governance Officer
+                    </h2>
+                    <p class="text-sm">
+                        Caitlin Travers is a second-year student at NYU studying English Literature with minors in Law &
+                        Society and Philosophy, and is a Dean's List honoree. Originally from North Carolina, she brings
+                        over four years of competitive debate experience to NYU, having competed in Public Forum
+                        throughout high school before transitioning to Policy in college. In her novice season, she won
+                        the Northeast Regional Championships, earned top speaker awards across multiple tournaments, and
+                        broke to elimination rounds at every tournament she entered. Outside of debate, Caitlin interns
+                        for a Manhattan Assemblymember, where she works on local policy and constituent affairs, and
+                        enjoys reading critical literary theory and reviewing movies. She is excited to contribute to
+                        the CEDA community this upcoming year as Data Governance Officer!
+                    </p>
+                </div>
+            </div>
         </div>
-
-        <hr class="my-4 border-gray-300" />
-
-        <div class="flex flex-col items-center py-4 md:flex-row md:items-start">
-          <img
-            src="../assets/img/jasmine-mcclure.jpeg"
-            alt="Photo of Jasmine McClure"
-            class="flex-shrink-0 mb-4 w-48 md:mr-10 md:mb-4"
-          />
-          <div class="ml-2 space-y-2">
-            <h2 class="text-lg font-bold">Jasmine McClure - Vice President</h2>
-            <p class="text-sm">
-              Jasmine McClure is a senior at the College of Arts and Sciences at
-              NYU. She is majoring in Politics with a double minor in Journalism
-              and French. She has been involved in debate since high school and
-              has continued her passion throughout college. She has participated
-              actively in the debate community through judging and participating
-              in tournaments, coordinating for the International Public Policy
-              Forum, and coaching high school debate.
-            </p>
-          </div>
-        </div>
-
-        <hr class="my-4 border-gray-300" />
-
-        <div class="flex flex-col items-center py-4 md:flex-row md:items-start">
-          <img
-            src="../assets/img/elena-li.jpeg"
-            alt="Photo of Elena Li"
-            class="flex-shrink-0 mb-4 w-48 md:mr-10 md:mb-4"
-          />
-          <div class="ml-2 space-y-2">
-            <h2 class="text-lg font-bold">Elena Li - Treasurer</h2>
-            <p class="text-sm">
-              Elena Li is a junior majoring in Economics and minoring in
-              Philosophy on the pre-law track. This is her second year on the
-              team. Last year, she started as a novice, and secured a top ten
-              speaker award and finished as the 2nd place team with her partner
-              Rachel in the Regional Championships at Bing. This year, she
-              finished as the second JV team at BTO with Jaida and with Luigi at
-              the Minnesota invitation. She really enjoyed her internship at New
-              Jersey Court last summer, and she is looking forward to intern at
-              Nassau DA office for the upcoming summer break.
-            </p>
-          </div>
-        </div>
-
-        <hr class="my-4 border-gray-300" />
-
-        <div class="flex flex-col items-center py-4 md:flex-row md:items-start">
-          <img
-            src="../assets/img/grace-cheng.jpeg"
-            alt="Photo of Grace Cheng"
-            class="flex-shrink-0 mb-4 w-48 md:mr-10 md:mb-4"
-          />
-          <div class="ml-2 space-y-2">
-            <h2 class="text-lg font-bold">Grace Cheng - PR Officer</h2>
-            <p class="text-sm">
-              Grace Cheng is a sophomore majoring in Economics and minoring in
-              History at CAS. She just started debate in college, and loves both
-              the intellectual challenge and the community. Grace has
-              participated in multiple tournaments and looks forward to working
-              with members of the debate team to make this year successful and
-              fruitful for every debater on the team. She is also involved in
-              the organization of the International Public Policy Forum.
-            </p>
-          </div>
-        </div>
-
-        <hr class="my-4 border-gray-300" />
-
-        <div class="flex flex-col items-center py-4 md:flex-row md:items-start">
-          <img
-            src="../assets/img/reeya-kansra.jpeg"
-            alt="Photo of Reeya Kansra"
-            class="flex-shrink-0 w-48 md:mr-10"
-          />
-          <div class="ml-2 space-y-2">
-            <h2 class="text-lg font-bold">Reeya Kansra - PR Officer</h2>
-            <p class="text-sm">
-              Reeya is a current Junior Studying Biochemistry and Gender and
-              Sexuality Studies on the Pre M.D. PhD. Track. On campus she is
-              currently serving as a resident assistant at Lipton Hall and is
-              Education Chair of Pre-Health Fraternity Delta Epsilon Mu. Off
-              campus she participates in immunology research at NYU Langone and
-              is currently pursuing projects in Gendered Public Health research
-              as well. Before coming to NYU, Reeya was a "speechie" for 7 years
-              participating mainly in Humorous Interp and OO. Now she serves as
-              NYU CEDA’s Public Relations Officer and debates with her longtime
-              partner and current President Jessica Tai.
-            </p>
-          </div>
-        </div>
-
-        <hr class="my-4 border-gray-300" />
-
-        <div class="flex flex-col items-center py-4 md:flex-row md:items-start">
-          <img
-            src="../assets/img/shreeram-modi.jpeg"
-            alt="Photo of Shreeram Modi"
-            class="flex-shrink-0 w-48 md:mr-10"
-          />
-          <div class="ml-2 space-y-2">
-            <h2 class="text-lg font-bold">Shreeram Modi - Webmaster</h2>
-            <p class="text-sm">
-              Shreeram Modi is a junior from the Bay Area double majoring in
-              Philosophy and Computer Science. He competed on the LD national
-              circuit in high school reading a variety of arguments. After
-              coming to college, he found his stride going mostly for the kritk
-              and clearing at the Texas Open with partner Eugene Toth. Shreeram
-              is still involved in and often judges high school debate, mostly
-              through his brother who took up the LD mantle at his old high
-              school. He loves figuring out ways to optimize technology for his
-              personal use and especially for debate for debate. You can often
-              find him endlessly tweaking his configs; you can also find him
-              <a href="https://smodi.net/" class="text-blue-600 underline"
-                >here</a
-              >.
-            </p>
-          </div>
-        </div>
-
-        <hr class="my-4 border-gray-300" />
-
-        <div class="flex flex-col items-center py-4 md:flex-row md:items-start">
-          <img
-            src=""
-            alt="Photo of Miki Pyke-Sharpe"
-            class="flex-shrink-0 w-48 md:mr-10"
-          />
-          <div class="ml-2 space-y-2">
-            <h2 class="text-lg font-bold">Miki Pyke-Sharpe - Secretary</h2>
-            <p class="text-sm">Lorem ipsum dolor</p>
-          </div>
-        </div>
-
-        <hr class="my-4 border-gray-300" />
-
-        <div class="flex flex-col items-center py-4 md:flex-row md:items-start">
-          <img
-            src="../assets/img/nicole-sekulic.jpeg"
-            alt="Photo of Nicole Sekulic"
-            class="flex-shrink-0 w-48 md:mr-10"
-          />
-          <div class="ml-2 space-y-2">
-            <h2 class="text-lg font-bold">
-              Nicole Sekulic - Data Governance Officer
-            </h2>
-            <p class="text-sm">
-              Nicole Sekulic is a Junior double majoring in Classics and
-              Politics with a Minor in Public Policy & Management. She has
-              competed in policy debate since high school, and is now actively
-              engaged in the evidence production as a part of NYU’s team. She
-              also contributes to the community service aspect of the team as an
-              International Public Policy Forum Co-Coordinator.
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
 
     <footer class="bg-nyuDeepViolet">
-      <div
-        class="flex flex-col justify-around py-10 px-6 mx-auto space-y-5 md:flex-row md:space-y-0"
-      >
-        <div class="flex flex-col justify-between items-center space-y-12">
-          <div class="flex justify-center space-x-6">
-            <a target="_blank" href="https://www.instagram.com/nyu_ceda">
-              <i class="fa-brands fa-instagram fa-xl" style="color: #ffffff">
-              </i>
-            </a>
+        <div class="flex flex-col justify-around py-10 px-6 mx-auto space-y-5 md:flex-row md:space-y-0">
+            <div class="flex flex-col justify-between items-center space-y-12">
+                <div class="flex justify-center space-x-6">
+                    <a target="_blank" href="https://www.instagram.com/nyu_ceda">
+                        <i class="fa-brands fa-instagram fa-xl" style="color: #ffffff">
+                        </i>
+                    </a>
 
-            <a target="_blank" href="https://www.facebook.com/nyuceda">
-              <i class="fa-brands fa-facebook fa-xl" style="color: #ffffff">
-              </i>
-            </a>
+                    <a target="_blank" href="https://www.facebook.com/nyuceda">
+                        <i class="fa-brands fa-facebook fa-xl" style="color: #ffffff">
+                        </i>
+                    </a>
 
-            <a target="_blank" href="https://www.tiktok.com/@nyuceda">
-              <i class="fa-brands fa-tiktok fa-xl" style="color: #ffffff"> </i>
-            </a>
-          </div>
+                    <a target="_blank" href="https://www.tiktok.com/@nyuceda">
+                        <i class="fa-brands fa-tiktok fa-xl" style="color: #ffffff"> </i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex justify-center space-x-20 text-white">
+                <div class="flex flex-col space-y-3">
+                    <a href="../" class="hover:underline underline-offset-2">Home</a>
+                    <a href="../e-board/" class="hover:underline underline-offset-2">E-Board</a>
+                    <a href="../coaches/" class="hover:underline underline-offset-2">Coaches</a>
+                </div>
+                <div class="flex flex-col space-y-3">
+                    <a href="../about/" class="hover:underline underline-offset-2">About</a>
+                    <a href="../calendar/" class="hover:underline underline-offset-2">Calendar</a>
+                </div>
+            </div>
+
+            <div class="text-center text-white md:block">
+                &copy; 2023
+                <a class="underline" target="_blank" href="https://smodi.net">Shreeram Modi</a>. All Rights Reserved
+            </div>
         </div>
-
-        <div class="flex justify-center space-x-20 text-white">
-          <div class="flex flex-col space-y-3">
-            <a href="../" class="hover:underline underline-offset-2">Home</a>
-            <a href="../e-board/" class="hover:underline underline-offset-2"
-              >E-Board</a
-            >
-            <a href="../coaches/" class="hover:underline underline-offset-2"
-              >Coaches</a
-            >
-          </div>
-          <div class="flex flex-col space-y-3">
-            <a href="../about/" class="hover:underline underline-offset-2"
-              >About</a
-            >
-            <a href="../calendar/" class="hover:underline underline-offset-2"
-              >Calendar</a
-            >
-          </div>
-        </div>
-
-        <div class="text-center text-white md:block">
-          &copy; 2023
-          <a class="underline" target="_blank" href="https://smodi.net"
-            >Shreeram Modi</a
-          >. All Rights Reserved
-        </div>
-      </div>
     </footer>
 
     <script src="../assets/js/menu.js"></script>
-  </body>
+</body>
+
 </html>
